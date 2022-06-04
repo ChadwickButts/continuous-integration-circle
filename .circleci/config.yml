@@ -10,18 +10,6 @@ jobs:
       - checkout
       
       - run:
-          name: install bundler
-          command: gem install bundler 
-          
-      - run:
-          name: update system 
-          command: gem update --system
-          
-      - run:
-          name: buildle undpate
-          command: bundle update --bundler 
-      
-      - run:
           name: build dependencies
           command: bundle install 
 
