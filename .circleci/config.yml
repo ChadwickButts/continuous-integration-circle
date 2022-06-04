@@ -27,6 +27,10 @@ jobs:
       - checkout
 
       - run:
+          name: update GitHub pages
+          command: bundle update github-pages
+          
+      - run:
           name: build dependencies
           command: bundle install
 
