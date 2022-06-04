@@ -10,10 +10,15 @@ jobs:
       - checkout
       - run:
           name: install bundler
-          command: bundle update --bundler 
+          command: gem install bundler 
+      
       - run:
           name: build dependencies
           command: bundle install 
+      
+      - run:
+          name: install bundler
+          command: bundle update --bundler 
 
       - run:
           name: build the jekyll site
