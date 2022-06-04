@@ -11,8 +11,11 @@ jobs:
 
       - run:
           name: build dependencies
-          command: bundle install |
-              gem install bundler
+          command: bundle install 
+      
+      - run:
+          name: update bundler
+          command: gem install bundler
 
       - run:
           name: build the jekyll site
