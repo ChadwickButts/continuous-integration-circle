@@ -16,6 +16,10 @@ jobs:
       - run:
           name: update system 
           command: gem update --system
+          
+      - run:
+          name: buildle undpate
+          command: bundle update --bundler 
       
       - run:
           name: build dependencies
